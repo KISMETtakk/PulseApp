@@ -1,0 +1,497 @@
+
+
+       
+
+        body {
+            display: flex;
+                      
+            min-height: 100vh;
+            width: 100h;
+            height: 100vh;
+           
+           
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 1s ease-in-out;
+            
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .pulse-data logoutBtn
+        {
+            color: white;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color:  transparent;
+            border: 1px solid #ADFFFA;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;            
+            margin-left: 45px;
+            font-size: 24px;
+            color: #000;
+            font-weight: bold;            
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+                box-shadow: 0 0 0px #fff;
+            }
+            to {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px #fff;
+            }
+        }
+
+        .bubbles img
+        {
+            width: 50px;
+            animation: bubble 7s linear infinite;
+           
+        }
+
+
+
+        .bubbles 
+        {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            bottom: -120px;
+            opacity: 30%;
+        }
+
+        @keyframes bubble
+        {
+            0%
+            {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            50%
+            {
+                
+                opacity: 1;
+            }
+
+            70%
+            {
+               
+                opacity: 1;
+            }
+
+            100%
+            {
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+        }
+
+        .bubbles img:nth-child(1)
+        {
+            animation-delay: 2s;
+            width: 25px;
+        }
+
+        .bubbles img:nth-child(2)
+        {
+            animation-delay: 1s;
+        }
+        .bubbles img:nth-child(3)
+        {
+            animation-delay: 3s;
+            width: 25px;
+        }
+        .bubbles img:nth-child(4)
+        {
+            animation-delay: 4.5s;
+            
+        }
+        .bubbles img:nth-child(5)
+        {
+            animation-delay: 3s;
+        }
+        .bubbles img:nth-child(6)
+        {
+            animation-delay: 6s;
+            width: 20px;
+        }
+        .bubbles img:nth-child(7)
+        {
+            animation-delay: 7s;
+            width: 35px;
+        }
+
+        
+        .textSessionName
+        {
+            color: #000;
+            font-size: 25px;
+            
+        }
+
+     
+
+        .textSessionMood
+        {
+            color:  #ADFFFA;
+            font-size: 50px;           
+            
+        }
+        .form-container
+        {
+            margin-top: 50px;
+        }
+        .container
+        {
+            margin-top: 20px;
+            
+            text-align: center;
+
+        }
+        .bx-user-check
+        {
+           
+           font-size: 30px;
+           color: #F5F0CC;
+        }
+        .panel1
+        {
+            
+            height: 650px;
+            width: 290px;
+            margin-top: 40px;
+            animation: pulse 2.5s infinite alternate;
+            background-color:  transparent;
+            border: 1px solid #ADFFFA;
+            position: absolute;
+            
+            left: 40%;
+            transform: translate(-50%, -50%);
+            
+            
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+                box-shadow: 0 0 0px black;
+            }
+            to {
+                transform: scale(1);
+                box-shadow: 0 0 20px white;
+            }
+        }
+        .container1
+        {
+            width: 250px;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid #ADFFFA;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 20px;
+            text-align: left;
+            transition: .5s;
+        }
+        .container1:hover
+        {
+            background-color: darkslategray;
+        }
+        
+        
+        .roboto-regular
+         {
+            font-family: "Roboto", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 55px;
+            color: #F5F0CC;
+            
+         }
+         .bpmText
+         {
+            font-size: 20px;
+         }
+
+         .moodText
+         {
+            font-family: "Roboto", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 40px;
+            color: #F5F0CC;
+         }
+         .nameText
+         {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 20px;
+            color: #F5F0CC;
+            margin-left: 5px;
+            
+            
+            
+         }
+         .container2
+         {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+         }
+         .bx-pulse
+         {
+            font-size: 20px;            
+            color: #F5F0CC;
+         }
+        
+         
+            body
+            {
+                background: linear-gradient(to right,#9a1d86, #1595be);
+                color: #F5F0CC;
+                font-family: "Roboto", sans-serif;
+            }
+
+         .music-player {
+            position: absolute;
+            right: 50px;
+            height: 95vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            }
+            
+            .player{
+            
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+            .wrapper{
+            border: 1px solid transparent;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: transparent;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            animation: pulse 3s infinite alternate;
+            background-color:  transparent;
+            border: 1px solid #ADFFFA;
+            }
+            
+            .details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            }
+            
+            .track-art {
+            margin: 25px;
+            height: 200px;
+            width: 200px;
+            border:2px solid 	#FFFAFA;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            -moz-box-shadow: 0px 6px 5px black;
+            -webkit-box-shadow: 0px 6px 5px black;
+            box-shadow: 0px 6px 5px black;
+            -moz-border-radius:190px;
+            -webkit-border-radius:190px;
+            border-radius:190px;
+            }
+            
+            .now-playing {
+            font-size: 1rem;
+            }
+            
+            .track-name {
+            font-size: 2rem;
+            }
+            
+            .track-artist {
+            margin-top: 5px;
+            font-size: 1rem;
+            }
+            
+            .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 10px;
+            }
+            .active{
+                color: black;
+            }
+            
+            .repeat-track,
+            .random-track,
+            .playpause-track,
+            .prev-track,
+            .next-track {
+            padding: 25px;
+            opacity: 0.8;
+            transition: opacity .2s;
+            }
+            
+            .repeat-track:hover,
+            .random-track:hover,
+            .playpause-track:hover,
+            .prev-track:hover,
+            .next-track:hover {
+            opacity: 1.0;
+            }
+            
+            .slider_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            
+            .seek_slider, .volume_slider {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 5px;
+            background: #83A9FF;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            }
+            
+            .seek_slider::-webkit-slider-thumb,
+            .volume_slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border: 3px solid #3774FF;
+            cursor: grab;
+            border-radius: 100%;
+            }
+            
+            .seek_slider:hover,
+            .volume_slider:hover {
+            opacity: 1.0;
+            }
+            
+            .seek_slider {
+            width: 60%;
+            }
+            
+            .volume_slider {
+            width: 30%;
+            }
+            
+            .current-time,
+            .total-duration {
+            padding: 10px;
+            }
+            
+            i.fa-volume-down,
+            i.fa-volume-up {
+            padding: 10px;
+            }
+            
+            i,
+            i.fa-play-circle,
+            i.fa-pause-circle,
+            i.fa-step-forward,
+            i.fa-step-backward,
+            p {
+            cursor: pointer;
+            }
+            .randomActive{
+                color: black;
+            }
+            .rotate {
+                animation: rotation 8s infinite linear;
+            }
+            @keyframes rotation {
+                from {
+                transform: rotate(0deg);
+                }
+                to {
+                transform: rotate(359deg);
+                }
+            }
+            .loader {
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .loader .stroke{
+                background: #f1f1f1;
+                height: 150%;
+                width: 10px;
+                border-radius: 50px;
+                margin: 0 5px;
+                animation: animate 1.4s linear infinite;
+            }
+            @keyframes animate {
+                50% {
+                height: 20%;
+                background: #4286f4;
+                }
+            
+                100% {
+                background: #4286f4;
+                height: 100%;
+                }
+            }
+            .stroke:nth-child(1){
+                animation-delay: 0s;
+            }
+            .stroke:nth-child(2){
+                animation-delay: 0.3s;
+            }
+            .stroke:nth-child(3){
+                animation-delay: 0.6s;
+            }
+            .stroke:nth-child(4){
+                animation-delay: 0.9s;
+            }
+            .stroke:nth-child(5){
+                animation-delay: 0.6s;
+            }
+            .stroke:nth-child(6){
+                animation-delay: 0.3s;
+            }
+            .stroke:nth-child(7){
+                animation-delay: 0s;
+            }
+         
+            
+            
+              
+          
+  

@@ -1,0 +1,39 @@
+.back-link
+{
+    position: absolute;
+    padding: 10px;
+    margin-top: 20px;
+    width: 315px;
+    height: 45px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.back-link:hover
+{
+    background-color: #009EC1;
+    border: 2px solid #fff;
+}
+
+.upload_file
+{
+    color: #fff;
+    font-size: 10px;
+
+}
+
+.upload_button
+{
+    color: #fff;
+    font-size: 10px;
+}
